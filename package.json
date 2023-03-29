@@ -1,5 +1,5 @@
 {
-    "name": "shopify2skeleton",
+    "name": "instancestudio/shopify2skeleton",
     "version": "1.0.0",
     "description": "Skeleton theme for Shopify 2.0",
     "main": "webpack.config.js",
@@ -30,16 +30,16 @@
     "scripts": {
         "shopify": "shopify",
         "assets:dev": "webpack --mode=development --watch",
-        "shopify:dev": "shopify theme dev --store=store-url.myshopify.com --theme-editor-sync",
+        "shopify:dev": "shopify theme dev --store=your-store.myshopify.com --theme-editor-sync",
         "start": "concurrently -k -n \"WEB,ADMIN\" -c \"blue,magenta\" \"npm run assets:dev\" \"npm run shopify:dev\" ",
         "build": "webpack --mode=production",
-        "deploy": "shopify theme push --store=store-url.myshopify.com",
-        "fetch": "shopify theme pull --store=store-url.myshopify.com"
+        "deploy": "shopify theme push --store=your-store.myshopify.com",
+        "fetch": "shopify theme pull --store=your-store.myshopify.com"
     },
     "repository": {
         "type": "git",
         "url": "github.com:Instance-Studio/shopify2skeleton.git"
     },
-    "author": "Travis Aaron Wagner",
+    "author": "Instance Studio",
     "license": "MIT"
 }
